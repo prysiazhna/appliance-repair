@@ -1,0 +1,49 @@
+@import '../../../styles/variables.less';
+
+.parallax-container {
+  position: relative;
+  height: 500px;
+  background-image: url('/assets/images/11.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+
+  z-index: 1;
+}
+
+.parallax-text {
+  position: relative;
+  z-index: 2;
+
+  .section-title-small{
+    color: white;
+    line-height: 3rem;
+  }
+
+  .schedule {
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: @accent-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background: @accent-color-light;
+    }
+  }
+}

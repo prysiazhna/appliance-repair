@@ -1,0 +1,51 @@
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Schedule Repair</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+    <div class="form-row">
+      <div class="input-group">
+        <input type="text" placeholder="Full Name" formControlName="fullName" />
+        <div *ngIf="hasError('fullName')" class="error">
+          Please enter your full name (min 2 characters).
+        </div>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="Phone Number" formControlName="phone" />
+        <div *ngIf="hasError('phone', 'pattern')" class="error">
+          Phone number must be 10 digits.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="input-group">
+        <input type="email" placeholder="Email" formControlName="email" />
+        <div *ngIf="hasError('email')" class="error">
+          Please enter a valid email address.
+        </div>
+      </div>
+
+      <div class="input-group">
+        <app-custom-select
+          formControlName="preferredContact"
+          [placeholder]="'Preferred contact method'"
+          [options]="[
+        { label: 'Phone', value: 'phone' },
+        { label: 'Email', value: 'email' },
+        { label: 'Messenger', value: 'messenger' }
+      ]"
+        ></app-custom-select>
+        <div *ngIf="hasError('preferredContact')" class="error">
+          Please select a preferred contact method.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row single">
+      <textarea  class="textarea" rows="5" placeholder="Message" formControlName="message"></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>

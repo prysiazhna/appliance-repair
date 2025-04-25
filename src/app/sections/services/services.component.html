@@ -1,0 +1,13 @@
+<section id="services" class="services-section">
+  <h2 class="section-title">Comprehensive Home Appliances Repair Services</h2>
+  <h6 class="section-subtitle">
+    We provide expert repair services for all major home appliances. Whether your refrigerator is leaking, your oven
+    isn’t heating, or your washing machine is making strange noises – we are here to help. </h6>
+  <div class="services-grid">
+    <div class="service-card" *ngFor="let service of services">
+      <img [src]="service.image" [alt]="service.title"/>
+      <h3>{{ service.title }}</h3>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,24 @@
+<section class="reasons-section">
+  <div class="left">
+    <div class="image-wrapper">
+      <img class="reasons-image" src="assets/images/10.jpg" alt="Technician repairing appliance" />
+    </div>
+  </div>
+
+    <div class="right">
+      <h2 class="section-title-small">Why Choose Standard Appliance Repair</h2>
+      <p class="section-subtitle">
+        We take pride in providing reliable, honest, and affordable appliance repairs — right when you need them.
+      </p>
+
+      <div class="reasons-list">
+        <div class="reason-item" *ngFor="let reason of reasons">
+          <i [class]="reason.icon" class="reason-icon"></i>
+          <div class="reason-text">
+            <h3 class="reason-title">{{ reason.title }}</h3>
+            <p class="reason-description">{{ reason.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

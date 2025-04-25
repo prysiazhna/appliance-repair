@@ -1,0 +1,18 @@
+<section id="about" class="about-section" appScrollSpy (visible)="triggerAnimation = true">
+  <div class="about-content">
+    <h2 class="section-title">About Us</h2>
+    <h6 class="section-subtitle">
+      At Standard Appliance Repair, we bring over six years of hands-on experience to every job. We’ve helped thousands of homeowners restore their appliances and trust us for reliable, affordable service. We stand for honesty, fair pricing, and quality repairs done right the first time.
+    </h6>
+
+      <div class="counter-section">
+        <app-counter
+          *ngFor="let item of counters; let i = index"
+          [value]="item.value"
+          [label]="item.label"
+          [narrow]="i === 0"
+          [animate]="triggerAnimation"
+        ></app-counter>
+    </div>
+  </div>
+</section>

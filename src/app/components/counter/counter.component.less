@@ -1,0 +1,50 @@
+@import '../../../styles/variables.less';
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  min-width: 180px;
+  min-height: 150px;
+}
+
+.count-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  min-width: 6ch;
+  margin-bottom: 4px;
+}
+
+.count {
+  font-size: 4rem;
+  font-weight: 800;
+  color: @accent-color;
+  line-height: 1;
+  display: inline-block;
+  width: 4ch;
+  text-align: right;
+}
+
+.plus {
+  font-size: 2.5rem;
+  margin-left: 4px;
+  color: @accent-color;
+  display: inline-block;
+}
+
+p {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.narrow .count {
+  width: 1ch;
+}
+

@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('/assets/fonts/icomoon/icomoon.woff') format('woff'),
+  url('/assets/fonts/icomoon/icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-coin-dollar:before {
+  content: "\e93b";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-clock2:before {
+  content: "\e94f";
+}
+.icon-calendar:before {
+  content: "\e953";
+}
+.icon-user-check:before {
+  content: "\e975";
+}
+.icon-wrench:before {
+  content: "\e991";
+}
+.icon-clipboard:before {
+  content: "\e9b8";
+}
+.icon-bookmark:before {
+  content: "\e9d2";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}

@@ -1,0 +1,33 @@
+.brands-section {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  .brands-logos {
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 4rem;
+
+    .logo-wrapper {
+      width: 120px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+    }
+
+    img {
+      max-height: 85px;
+      max-width: 100%;
+      object-fit: contain;
+      transition: transform 0.3s ease, filter 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        filter: grayscale(0%);
+      }
+    }
+  }
+}

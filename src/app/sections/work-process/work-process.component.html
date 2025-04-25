@@ -1,0 +1,15 @@
+<section class="work-process-section">
+  <p class="section-subtitle">How It Works</p>
+  <h2 class="section-title">Check Out Our Work Process</h2>
+
+  <div class="steps-container">
+    <div class="step" *ngFor="let step of steps">
+      <div class="image-wrapper">
+        <img [src]="step.image" [alt]="step.title" />
+        <span class="badge">{{ step.number }}</span>
+      </div>
+      <h3 class="step-title">{{ step.title }}</h3>
+      <p class="step-text">{{ step.text }}</p>
+    </div>
+  </div>
+</section>

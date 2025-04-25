@@ -1,0 +1,37 @@
+<footer class="footer-section">
+
+  <div class="company-header">
+    <div class="line"></div>
+    <div class="company-title">
+      <h2 class="logo">Standard Appliance Repair</h2>
+      <p class="slogan">Fast & Trusted Appliance Repair in Everett, WA</p>
+    </div>
+    <div class="line"></div>
+  </div>
+
+  <div class="footer-content">
+    <address class="contact-info">
+      <h3 class="title">Contact Info</h3>
+      <p class="contact-item"><span class="icon icon-location"></span> {{ contact.city }}</p>
+      <p class="contact-item"><span class="icon icon-phone"></span> {{ contact.phone }}</p>
+      <p class="contact-item"><span class="icon icon-google"></span> {{ contact.email }}</p>
+    </address>
+
+    <div class="business-hours">
+      <h3 class="title">Business Hours</h3>
+      <p class="contact-item" *ngFor="let item of hours">
+        <span class="icon icon-clock"></span> {{ item.day }}: {{ item.time }}
+      </p>
+    </div>
+
+    <div class="social-icons">
+      <button class="book-btn" (click)="scrollToContact()">Book Service</button>
+      <app-social-icons></app-social-icons>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div>© 2025 Standard Appliance Repair.</div>
+    <div>All Rights Reserved.</div>
+  </div>
+</footer>

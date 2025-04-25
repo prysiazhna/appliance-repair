@@ -1,0 +1,41 @@
+<!-- TOP PANEL -->
+<div id="top" class="top-panel">
+  <h4 class="top-panel-text">Professional & Expert Appliance Repair</h4>
+  <app-social-icons></app-social-icons>
+  <h4 class="top-panel-text">Book Appliance Repair Today!</h4>
+</div>
+
+<!-- HEADER -->
+<header class="header-container" [class.sticky]="isSticky">
+  <div class="main-header">
+    <div class="logo">Standard Appliance Repair</div>
+
+    <nav class="nav-links desktop-nav">
+      <a
+        class="link"
+        *ngFor="let item of menuItems"
+        (click)="scrollToSection(item.route); closeMenu()"
+        [class.active]="activeSection === item.route"
+      >
+        {{ item.label }}
+      </a>
+    </nav>
+
+    <app-hamburger
+      class="hamburger"
+      [isActive]="isMenuOpen"
+      (toggled)="toggleMenu()"
+    ></app-hamburger>
+  </div>
+</header>
+
+<!-- MOBILE MENU OUTSIDE HEADER -->
+<div class="mobile-menu" [class.open]="isMenuOpen">
+  <a
+    class="link"
+    *ngFor="let item of menuItems"
+    (click)="scrollToSection(item.route); closeMenu()"
+  >
+    {{ item.label }}
+  </a>
+</div>

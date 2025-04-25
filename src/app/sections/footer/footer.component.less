@@ -1,0 +1,112 @@
+@import '../../../styles/variables.less';
+
+.footer-section {
+  background: @secondary-color;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+
+  .company-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+
+    .line {
+      flex: 1;
+      height: 1px;
+      background: @accent-color;
+      max-width: 100px;
+    }
+
+    .company-title {
+      text-align: center;
+
+      .logo {
+        font-size: 2rem;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+      }
+
+      .slogan {
+        font-size: 0.9rem;
+        color: #ccc;
+        margin-top: 0.3rem;
+      }
+    }
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 4rem;
+
+    .contact-info,
+    .business-hours {
+      text-align: left;
+      max-width: 300px;
+
+      .title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        font-style: normal;
+        text-align: left;
+      }
+
+      .contact-item {
+        margin: 0.5rem 0;
+        font-style: normal;
+
+        .icon {
+          color: @accent-color-light;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.2rem;
+
+      .book-btn {
+        padding: 10px 30px;
+        font-size: 1rem;
+        background-color: @accent-color;
+        color: white;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background: @accent-color-light;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contact-info,
+    .business-hours {
+      .title {
+        text-align: center;
+      }
+    }
+  }
+}
