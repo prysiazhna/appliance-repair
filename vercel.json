@@ -1,5 +1,4 @@
 {
-  "outputDirectory": "dist/standard-appliance-repair",
   "rewrites": [
     {
       "source": "/(.*)",
