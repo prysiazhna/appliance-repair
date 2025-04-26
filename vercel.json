@@ -1,5 +1,9 @@
 {
+  "outputDirectory": "dist/standard-appliance-repair",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
