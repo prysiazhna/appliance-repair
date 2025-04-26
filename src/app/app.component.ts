@@ -14,10 +14,21 @@ import {ParallaxComponent} from './sections/parallax/parallax.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, MainComponent, AboutComponent, ServicesComponent, BrandsComponent, ContactComponent, WorkProcessComponent, FooterComponent, ReasonsComponent, ParallaxComponent],
+  imports: [
+    RouterOutlet,
+    HeaderComponent,
+    MainComponent,
+    AboutComponent,
+    ServicesComponent,
+    BrandsComponent,
+    ContactComponent,
+    WorkProcessComponent,
+    FooterComponent,
+    ReasonsComponent,
+    ParallaxComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.less'
 })
 export class AppComponent {
-  title = 'standard-appliance-repair';
 }

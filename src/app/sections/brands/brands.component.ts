@@ -22,7 +22,7 @@ export class BrandsComponent {
     'assets/brands/may.png',
     'assets/brands/miele.webp',
     'assets/brands/samsung.webp',
-    'assets/brands/sq.jpeg',
+    'assets/brands/sq.png',
     'assets/brands/subzero.webp',
     'assets/brands/therma.png',
     'assets/brands/vik.jpeg',

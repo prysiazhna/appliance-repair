@@ -12,7 +12,7 @@ import {SocialIconsComponent} from '../../components/social-icons/social-icons.c
 export class FooterComponent {
 
   contact = {
-    city: 'Everett, WA, USA',
+    city: 'Seattle, WA, USA',
     phone: '(206) 724-5561',
     email: 'info@example.com',
   };

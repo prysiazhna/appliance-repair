@@ -5,8 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class TelegramService {
-  private apiUrl = 'https://telegram-api-sar.vercel.app/';
-
+  private apiUrl = 'https://telegram-api-sar.vercel.app/send-telegram';
   constructor(private http: HttpClient) {}
 
   sendMessage(formData: {
