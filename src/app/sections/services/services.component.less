@@ -61,6 +61,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
     }
+
     .section-title {
       width: 60%;
     }
@@ -72,14 +73,29 @@
     .section-title {
       width: 100%;
     }
+
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
   }
 }
 
 @media (max-width: 600px) {
   .services-section {
     .services-grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
+      .service-card {
+        height: 142px;
+        padding: 1.5rem 1rem;
+
+        h3 {
+          font-size: 1rem;
+        }
+
+        img {
+          width: 100px;
+        }
+      }
     }
   }
 }
